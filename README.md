@@ -22,7 +22,10 @@ Say goodbye to hours of research and let AI engineer your perfect adventure, pre
 * 🎨 **Interactive Curvy Timeline:** A beautiful, alternating left-to-right timeline layout featuring scroll-triggered fade animations and unique color themes for every day of the trip.
 * 🖼️ **Zero-Cost Image Fetching:** Bypasses expensive Google Maps billing by using a clever combination of the **Wikipedia API** (for real landmark photos) and **Unsplash** (for stunning, high-quality fallbacks).
 * 🗺️ **Google Maps Integration:** Every generated location image and title is a clickable link that instantly opens a targeted Google Maps search for seamless navigation.
-* 🔒 **Secure Authentication:** Protected by **Firebase Authentication** (Google OAuth), ensuring only logged-in users can generate trips.
+* 🔒 **Secure Authentication:** Protected by **Firebase Authentication** supporting both Google OAuth and Email/Password sign-ins.
+* 👤 **Profile Management:** A dedicated Profile page to manage user details (name, avatar, cover photo), view past generated trips, and manage favorite destinations.
+* 🌍 **Explore Mode:** Discover curated hidden gems and popular locations, and easily save them to your favorites for future planning.
+* 💎 **Modern UI/UX:** Fully responsive design with glassmorphism effects, smooth micro-animations, and a premium visual aesthetic.
 
 ## 🚶‍♂️ How It Works
 
