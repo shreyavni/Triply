@@ -49,6 +49,7 @@ export default function LoginPage({ onGoogleSignIn, onNavigate }) {
     const bgImage = "https://images.unsplash.com/photo-1507608616759-54f48f0af0ee?q=80&w=2000&auto=format&fit=crop";
 
     return (
+        
         <div style={{ 
             display: 'flex', 
             width: '100vw', 
@@ -110,13 +111,16 @@ export default function LoginPage({ onGoogleSignIn, onNavigate }) {
                     color: '#fff'
                 }}>
                     <div style={{ position: 'absolute', inset: 0, background: 'linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%)' }} />
-                    
+                    <div style={{ position:'absolute',top:'8%',left:'43%' }}>
+                        <img src="triply.png" alt="" style={{ borderRadius:'20px', border: '2px solid #e5e7eb', width: '100px', height: '50px', transform: 'scale(1.4)' }} />
+                        <span style={{ fontSize: '20px', fontWeight: '700', letterSpacing: '1px' }}></span>
+                    </div>
                     <div style={{ position: 'relative', zIndex: 1, paddingBottom: '20px' }}>
                         <h1 style={{ fontSize: '48px', fontWeight: '800', lineHeight: '1.1', margin: '0 0 16px 0', letterSpacing: '-1px' }}>
                             ENJOY THE<br/>WORLD
                         </h1>
                         <p style={{ fontSize: '13px', lineHeight: '1.5', margin: '0 0 32px 0', color: 'rgba(255,255,255,0.85)', maxWidth: '90%' }}>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            Escape the ordinary with Triply. Discover hidden gems, plan unforgettable journeys, and create memories that last a lifetime. Your next adventure is just a click away.
                         </p>
                         <button style={{
                             padding: '12px 32px',
@@ -132,7 +136,7 @@ export default function LoginPage({ onGoogleSignIn, onNavigate }) {
                         onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
                         onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
                         >
-                            Learn More
+                            Explore Now
                         </button>
                     </div>
                 </div>
@@ -148,13 +152,6 @@ export default function LoginPage({ onGoogleSignIn, onNavigate }) {
                     justifyContent: 'center',
                     color: '#fff'
                 }}>
-                    {/* Top Logo */}
-                    <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '32px' }}>
-                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21.5 4c0 0-2 .5-3.5 2L14.5 9.5l-8.2-1.8c-1.2-.3-2.4.3-2.8 1.5-.2.6-.1 1.2.2 1.6L8 15l-4 4-2.5-.5L1 20l4.5 2 2-2 4-4 4.2 4.3c.4.3 1 .4 1.6.2 1.2-.4 1.8-1.6 1.5-2.8z"/>
-                        </svg>
-                        <span style={{ fontSize: '20px', fontWeight: '700', letterSpacing: '1px' }}>travel</span>
-                    </div>
 
                     <h2 style={{ fontSize: '22px', fontWeight: '600', marginBottom: '32px' }}>
                         {isSignUp ? 'Create Account' : 'Welcome Back'}
@@ -175,7 +172,7 @@ export default function LoginPage({ onGoogleSignIn, onNavigate }) {
                                     required
                                     value={name}
                                     onChange={(e) => setName(e.target.value)}
-                                    placeholder="Duxica Design"
+                                    placeholder="Enter your name"
                                     style={{ width: '100%', padding: '14px', borderRadius: '4px', border: 'none', backgroundColor: '#fdfdfd', color: '#1e293b', fontSize: '14px', boxSizing: 'border-box', outline: 'none' }}
                                 />
                             </div>
@@ -188,7 +185,7 @@ export default function LoginPage({ onGoogleSignIn, onNavigate }) {
                                 required
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                placeholder="design@duxica.com"
+                                placeholder="Enter your email"
                                 style={{ width: '100%', padding: '14px', borderRadius: '4px', border: 'none', backgroundColor: '#fdfdfd', color: '#1e293b', fontSize: '14px', boxSizing: 'border-box', outline: 'none' }}
                             />
                         </div>
@@ -200,7 +197,7 @@ export default function LoginPage({ onGoogleSignIn, onNavigate }) {
                                 required
                                 value={password}
                                 onChange={(e) => setPassword(e.target.value)}
-                                placeholder="*****************"
+                                placeholder="*********"
                                 style={{ width: '100%', padding: '14px', borderRadius: '4px', border: 'none', backgroundColor: '#fdfdfd', color: '#1e293b', fontSize: '14px', boxSizing: 'border-box', outline: 'none' }}
                             />
                             <div style={{ fontSize: '11px', color: 'rgba(255,255,255,0.8)', marginTop: '6px' }}>
